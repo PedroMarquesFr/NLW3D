@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Localize um orfanato</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+
+     <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
     
     <link rel="stylesheet" href="./public/css/main.css">
     <link rel="stylesheet" href="./public/css/animations.css">
@@ -13,23 +22,24 @@
 </head>
 <body>
     <div id="page-orphanages">
-        <aside>
+        <aside class="animate-right">
             <header>
                 <img src="./public/images/map-marker.svg" alt="">
                 <h2>Escolha um organato no mapa</h2>
                 <p>Muitas criancas estao esperando sua visita :)</p>
             </header>
+            <footer>
+                <strong>Sobral</strong>
+                <p>Ceara</p>
+            </footer>
         </aside>
-        <footer>
-            <strong>Sobral</strong>
-            <p>Ceara</p>
-        </footer>
-        <div class="mapid"></div>
+        
+        <div id="mapid">meu deus</div>
 
         <a href="create-orphanage.html" class="create-orphanage" title="Cadastre um orfanato">
             <img src="./public/images/plus.svg" alt="">
         </a>
-
-
+    </div>
+    <script src="./public/scripts/page-orphanages.js"></script>
 </body>
 </html>
